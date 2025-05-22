@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+}
+
+.heading {
+  display: flex;
+  gap: 70px;
+  margin: 20px 45px;
+}
+
+.links {
+  display: flex;
+  gap: 600px;
+  cursor: pointer;
+}
+
+.top-links {
+  display: flex;
+  gap: 20px;
+}
+.Register {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.registerBtn {
+  border: solid 2px;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: -6px;
+  margin-bottom: 50px;
+}
+.body-properties {
+  display: flex;
+  margin-top: -40px;
+
+  /* gap: 300px; */
+}
+
+.bodyText {
+  margin: 70px 0 0 170px;
+}
+
+.bgImage {
+  width: 30%;
+  margin-top: -5px;
+  margin-left: 250px;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+.bodyPara {
+  margin-top: 40px;
+}
+
+.learnBtn {
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+  width: 150px;
+  text-align: center;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logos {
+  margin: -40px 0 0 170px;
+
+  display: flex;
+  width: 5%;
+  gap: 30px;
+}
+
+.navbar {
+  /* background-color: #333; */
+  padding: 16px;
+  position: relative;
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  width: 30px;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.menu {
+  list-style: none;
+  background-color: #333;
+  display: none;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.menu li a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu.active {
+  display: flex;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.featureToggle {
+  background-color: rgb(255, 255, 255);
+  width: 130px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  height: 130px;
+  border-radius: 5px;
+  position: relative;
+  left: 140px;
+  bottom: 60px;
+  display: none;
+}
+
+.todo {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.calendar {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.reminder {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.planning {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.companyToggle {
+  background-color: rgb(255, 255, 255);
+  width: 100px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  height: 90px;
+  border-radius: 5px;
+  position: relative;
+  left: 300px;
+  bottom: 190px;
+  display: none;
+}
+
+.history {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.ourTeam {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.blog {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobiletext {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .bgImage {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 380px;
+    margin-top: -30px;
+    margin: auto;
+  }
+  .mobiletext {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0 0 0;
+  }
+  h1 {
+    display: none;
+  }
+  .links {
+    display: none;
+  }
+  .bodyText {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+  }
+  .body-properties {
+    display: block;
+    margin: -20px;
+  }
+  .learnBtn {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .logos {
+    margin: 60px 0 0 0;
+    /* width: 50px; */
+    gap: 100px;
+    /* display: flex; */
+    /* max-width: 5%; */
+  }
+
+  .heading {
+    margin: 20px 0 20px 20px;
+  }
+  .navbar {
+    display: block;
+    position: relative;
+    left: 290px;
+    bottom: 50px;
+  }
+  .logo1 {
+    width: 5%;
+  }
+  .logo2 {
+    width: 5%;
+    margin-left: 22px;
+  }
+  .logo3 {
+    width: 5%;
+    margin-left: -32px;
+  }
+  .logo4 {
+    width: 5%;
+    /* margin-right: -800px; */
+  }
+}
