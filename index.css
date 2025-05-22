@@ -270,4 +270,7 @@ h1 {
     width: 5%;
     /* margin-right: -800px; */
   }
+  .menu {
+    display: block;
+  }
 }
