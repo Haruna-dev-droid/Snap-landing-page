@@ -87,7 +87,7 @@ h1 {
   /* background-color: #333; */
   padding: 16px;
   position: relative;
-  display: none;
+  /* display: none; */
 }
 
 .hamburger {
@@ -106,21 +106,23 @@ h1 {
 
 .menu {
   list-style: none;
-  background-color: #333;
+  background-color: #fffefe;
   display: none;
   flex-direction: column;
+
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   margin-top: 10px;
 }
 
 .menu li a {
-  color: white;
   padding: 10px;
   text-decoration: none;
+  color: black;
   display: block;
 }
 
 .menu.active {
-  display: flex;
+  display: block;
 }
 
 .hamburger.active span:nth-child(1) {
@@ -270,7 +272,7 @@ h1 {
     width: 5%;
     /* margin-right: -800px; */
   }
-  .menu {
+  /* .menu {
     display: block;
-  }
+  } */
 }
