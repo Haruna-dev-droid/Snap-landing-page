@@ -178,8 +178,16 @@ h1 {
   border-radius: 5px;
   position: relative;
   left: 300px;
-  bottom: 190px;
+  bottom: 60px;
   display: none;
+}
+
+.featureToggle.active {
+  display: block;
+}
+
+.companyToggle.active {
+  display: block;
 }
 
 .history {
